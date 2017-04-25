@@ -1,0 +1,21 @@
+/*contact 开始*/
+#content{
+	padding-top: 88px;
+}
+#content .title{
+	display: block;
+	color: #7c7c7c;
+	font-size: 24.5px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border: 0px;
+}
+#content ul.product_description{
+	margin: 0;
+	color: #7c7c7c;
+	font-size: 14px;
+}
+/*contact 结束*/

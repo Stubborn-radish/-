@@ -1,0 +1,56 @@
+#content{
+	padding-top: 88px;
+}
+#title{
+	font-size: 24.5px;
+	color: #7c7c7c;
+	line-height: 30px;
+	margin: 15px 0;
+	font-weight: 400;
+}
+.carousel{
+	width: 960px;
+}
+.carousel-imgs{
+	width: 2888px;
+	position: relative;
+}
+.carousel-item{
+	width: 960px;
+	/*background: #f00;*/
+	float: left;
+}
+.carousel-txt{
+	float: left;
+	width: 361px;
+	height: 194px;
+	padding: 15px;
+	text-align: center;
+	background: #f4f4f4;
+}
+.carousel-txt h3{
+	font-size: 26px;
+	color: #4d4d4d;
+	font-weight: 400;
+}
+.carousel-txt p{
+	color: #7c7c7c;
+	line-height: 20px;
+}
+.carousel-txt h5{
+	font-weight: bold;
+	color: #7c7c7c;
+	height: 48px;
+}
+.carousel-txt a{
+	display: block;
+	background: #424242;
+	color: #ffffff;
+	font-size: 17.5px;
+	height: 44px;
+	line-height: 44px;
+}
+.carousel-imgs img.carousel-img{
+	float: right;
+	width: 554px;
+}

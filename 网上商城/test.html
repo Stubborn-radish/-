@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+    
+    <div id ="div1">
+        <ul id="ul1">
+            <!-- ahfa -->
+
+            <li>11111</li>
+            <li>22222</li>
+            <li id="li3">33333</li>
+        </ul>
+        <p>aaaaa</p>
+    </div>
+
+	<script>
+		// var a = 5;
+		// var b = 6;
+		// document.write(a/b);
+		// console.log(a);
+		// var a= 5;
+		// var b= 6;
+		// console.log(a/b);
+		// var b;
+		// var a=true,b；
+		// console.log(a||b);
+		// var mytext = "Here is some text!" 
+		// console.log(mytext);
+	    // console.log(a+b*b>36 && a>1)
+	    // var x=Math.random();
+	    // var y=Math.random();
+	    // x>y ? alert("a大") : alert("b大")
+	    // var today = new Date();   //获取当天日期
+        //  var year = today.getFullYear();
+       
+        //if(year%4==0 && year%100!=0 && year%400==0){
+        //    	   alert("该年为闰年！");
+        //    }
+        //    else{
+        //    	alert("不是闰年");
+        //    }
+        //    儿童：年龄＜14；青少年：14<=年龄＜24；青年：24<年龄＜40; 中年：40＜=年龄＜60; 老年：年龄>=60
+         // var age = prompt("请输入年龄：","");
+         // if(age<14){alert("儿童");}
+         // if(age>=14 && age<24){alert("青少年");}
+         // if(age>24 && age<40){alert("青年");}
+         // if(age>=40 && age<60){alert("中年");}
+         // if(age>=60){alert("老年");}
+         // var day = prompt("请输入数字0~6：","");
+
+
+         // switch(day){
+         // 	case "0":
+         // 		alert("星期一"); break;
+         // 	case "1":
+         // 		alert("星期二"); break;
+         // 	case "2":
+         // 		alert("星期三"); break;
+         // 	case "3":
+         // 		alert("星期四"); break;
+         // 	case "4":
+         // 		alert("星期五"); break;
+         // 	case "5":
+         // 		alert("星期六"); break;
+         // 	case "6":
+         // 		alert("星期日"); break;
+         // 	default:
+         // 		alert("输入错误"); break;
+         // }
+         // for(var i = 10; i>0; i--){
+
+         // 	num = i*(i-1);
+
+         // }
+
+         // console.log(num);
+         
+
+    	// var fac,i,num;
+     //    num=0;
+	    // fac=1;
+	    // for(i=1;i<=10;i++){
+     //         fac *= i;
+     //         num = num + fac;
+     //    }
+	    // alert("10!+9!+..1!=" + num);
+
+
+
+         // for(var i = 1; i<=10; i++){
+         // 	for(var j=1; j<i; j++){
+         // 		j = j*j;
+         // 	}
+         // 	j = j+j;
+         // }
+         // console.log(j);
+         /*var n;
+         function pr(){               //判断是否为素数
+            if(n==2){
+                return false;
+            }
+            for(var i=2; i<n;i++){
+                if(n%i==0){
+                   return false;
+                }
+            } 
+            return true; 
+        }
+         var num = 0;
+         for(var i=100;i<=1000;i++){
+            if(pr(i)){
+                num++;
+                document.write(i+",");
+                if(num % 6==0){
+                    document.write('<br>');
+                }
+            }
+         }*/
+        //  function star(n){
+        //     for(var i=0; i<n;i++){
+        //        for(var j=0; j<n-; j++){
+        //         document.write('&nbsp;');
+        //        }
+        //        for(var x=0; x<=i; x++){
+        //         document.write('*&nbsp;');
+        //        }           
+        //        document.write('<br>');
+        //     }
+        // }
+        // star(10);
+        // function fib(n){     
+        //     if(n==1 || n==2){
+        //         return 1;
+        //     }
+        //     return fib(n-1)+fib(n-2);
+        // }
+        // function fib1(n){
+        //     if(n == 1 || n == 2){
+        //         return 1;
+        //     }
+        //     var f1 = 1,f2 = 2;
+        //     var x;
+        //     for(var i = 3; i<=n; i++){
+        //         x = f1 + f2;
+        //         f1 = f2;
+        //         f2 = x;
+        //     }
+        //     return f2;
+        // } 
+        // // var num = fib(5);   //1.1.2.3.5
+        // // document.write(num);   
+        // document.write(fib1(6)); 
+        // 
+        // function play(){
+        // var x = Math.floor(Math.random()*9)+1; 
+        // var y = Math.fdloor(Math.random()*9)+1; 
+        // var z = Math.floor(Math.random()*9)+1; 
+        // var win;
+        // var str;
+        //  if(x ==8 || y ==8 || z==8){
+        //     win = '你赢了'；
+        //  }else{
+        //     win = '你输了';
+        //  }
+        //     return x +","+y+","+z+",\n"+win;
+        // }
+        // var result = confirm(play());
+        // while(result){
+        //     result = confirm(play());
+        // }
+        function next(elem){
+            do{
+                elem = elem.nextSibling;
+            }while(elem && elem.nodeType != 1){  //找到的是有效的且找到的不是元素节点
+                return elem;
+            }
+        }
+        // console.log(next(oLi));
+        function previous(elem){
+
+        }
+        function first(elem){
+            elem = elem.firstChild;
+            if(elem && elem.nodeType != 1){
+                elem = next(elem);
+            }
+            return elem;
+        }
+        function last(){
+
+        }
+        var oUl1 = document.getElementById('ul1');
+
+        oUl1.appendChild(first(oUl1).cloneNode(true));  //克隆
+
+        // var oUl1 = document.getElementById('ul1');
+        // console.log(oUl1.firstChild.nodeName);
+        
+        // var aDiv = document.getElementsByTagName('div');
+
+        // aDiv.pop();
+
+        // console.log(aDiv);
+
+        // console.log(aDiv);
+        // 
+        var op = document.creatElement('p');
+        op.innerHTML = 'haha';
+        
+	</script>	
+        
+</body>
+</html>
